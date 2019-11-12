@@ -13,7 +13,7 @@ class KendryteOpenocd < Formula
 
   def install
     system "./bootstrap", "nosubmodule" if build.head?
-    system "./configure", "--prefix=#{prefix}"
+    system "./configure"
     system "make", "install"
   end
 
