@@ -13,7 +13,8 @@ class KendryteOpenocd < Formula
 
   def install
     system "./bootstrap", "nosubmodule"
-    system "./configure"
+    system "./configure", "--disable-dependency-tracking",
+                          "--prefix=#{prefix}"
     system "make", "install"
   end
 
