@@ -4,6 +4,7 @@ class KendryteOpenocd < Formula
   url "https://github.com/metalcode-eu/kendryte-openocd/archive/v0.2.3.tar.gz"
   sha256 "0728a42478236d2e4732cc65fd787c52889182bf9beb5de029dc08827de264ab"
 
+  depends_on "gcc"        => :build
   depends_on "make"       => :build
   depends_on "autoconf"   => :build
   depends_on "automake"   => :build
