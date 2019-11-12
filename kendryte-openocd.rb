@@ -10,6 +10,7 @@ class KendryteOpenocd < Formula
   depends_on "autoconf"   => :build
   depends_on "automake"   => :build
   depends_on "texinfo"    => :build
+  depends_on "jimtcl"     => :build
   depends_on "libusb"
 
   def install
