@@ -14,7 +14,7 @@ class KendryteOpenocd < Formula
 
   def install
     system "./bootstrap", "nosubmodule"
-    system "./configure"
+    system "./configure", "nosubmodule"
     system "make", "install"
   end
 
