@@ -12,7 +12,7 @@ class KendryteOpenocd < Formula
   depends_on "libusb"
 
   def install
-    system "./bootstrap", "nosubmodule" if build.head?
+    system "./bootstrap"
     system "./configure"
     system "make", "install"
   end
