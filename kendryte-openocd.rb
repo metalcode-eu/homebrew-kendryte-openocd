@@ -12,10 +12,7 @@ class KendryteOpenocd < Formula
 
   def install
     system "./bootstrap"
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
+    system "./configure"
     system "make", "install"
   end
 
